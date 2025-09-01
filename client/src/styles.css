@@ -1,0 +1,17 @@
+/* src/styles.css - simple, responsive */
+:root {
+  --max-width:1100px; --accent:#2563eb; --muted:#6b7280;
+  --card:#fff; --surface:#f6f8fb; --radius:10px;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%; margin:0; background:var(--surface); color:#0b1220}
+.app-container{ max-width:var(--max-width); margin:28px auto; padding:0 16px; }
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.brand{font-weight:700;color:var(--accent);text-decoration:none}
+.btn{padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:white;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--muted);border:2px solid #e6e8eb}
+.form{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(11,18,32,0.06)}
+.input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e8eb;margin-bottom:10px}
+.center{text-align:center}
+.small-muted{color:var(--muted);font-size:0.9rem}
